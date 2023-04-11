@@ -5,7 +5,7 @@
 
 1. View the Unencrypted User & Password file.
 
-    cat userpass
+```cat userpass```
 
 2. Encrypt the variable file. 
 Use the password cisco123 
