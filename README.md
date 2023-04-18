@@ -8,21 +8,21 @@
 
 1. View the Unencrypted User & Password file.
 
-```cat userpass```
+```cat authc.vault```
 
 2. Encrypt the variable file. 
 Use the password cisco123 
 
-```ansible-vault encrypt userpass```
+```ansible-vault encrypt authc.vault```
     
 3. View the encrypted variable file
 
-```cat userpass```
+```cat authc.vault```
     
 4. Use Ansible Vault to view the encrypted variable file. 
 Remember, the password is cisco123
 
-```ansible-vault view userpass```
+```ansible-vault view authc.vault```
   
 5.   
   
