@@ -1,8 +1,6 @@
 # Cisco Live US 2023
 # DEVWKS-2008 - Reducing the Attack Surface of IOS XE with Ansible
 
-## [Ansible Directory Structure](/Directory_Structure.md)
-
 
 ## [Ansible Vault](/01-Ansible_Vault.md)
 
@@ -18,4 +16,6 @@
 
 ## [Configure MACsec on a VLAN Trunk Port](/05-MACsec_PSK.md)
   
+# FYI
   
+## [Ansible Directory Structure](/Directory_Structure.md)
