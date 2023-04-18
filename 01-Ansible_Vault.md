@@ -5,7 +5,10 @@ Storing Username and Passwords in your Inventory or Playbooks needs to be a thin
 
 <ol>
 <li>View the Unencrypted User & Password file. </li>  
-ansible_user & ansible_password are variables that point to username and password that will be used to login to the Catalyst 9000. 
+
+ansible_user & ansible_password are variables that point to username and password that will be used to login to the Catalyst 9000.  
+  
+In this case we are only going to encrypt these varibles.  Be aware that you are able to encrypt any variable that you would like.     
 
 ```cat vaults/authc.vault```  
 
