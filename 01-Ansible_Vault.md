@@ -4,10 +4,13 @@ In this section we will work with Ansible Vault.
 Storing Username and Passwords in your Inventory or Playbooks needs to be a thing of the past. 
 
 <ol>
-<li>View the Unencrypted User & Password file. </li>  
-ansible_user & ansible_password are variables that point to username and password that will be used to authenticate to the Catalyst 9000 switch.  
 
-In this case we are only going to encrypt these varibles, but please understand that you are able to encrypt ANY variable that you would like.     
+<li>Change directory to the Ansible root directory.</li>
+
+```cd /etc/ansible```
+
+<li>View the Unencrypted User & Password file. </li>  
+ansible_user & ansible_password are variables. The variables contain the username and password that will be used to authenticate to the Cat9K switch. In this case we will only encrypt these varibles, but you should understand that Ansible Vault can be used to encrypt ANY variable.     
 
 ```cat vaults/authc.vault```  
 
@@ -16,16 +19,18 @@ In this case we are only going to encrypt these varibles, but please understand 
   
 <li>Encrypt the variable file, use the password cisco123 </li>
 Use this command to encrypt the file that contains the variables.  
+Assure the encryption password is entered correctly and that the the Encryption successful message is displayed. 
   
 ```ansible-vault encrypt vaults/authc.vault```  
 
 <img src="/images/01-02-ansible-vault-encrypt-web.png" alt="Ansible Vault Encryption Process" width=600>    
+
 <li>View the encrypted variable file.</li>
-256-bit AES with salt is used to encrypt the file.
+The top line identifies the file as an Ansible Vault File. The file is encrypted using Ansible Vault version 1.1. The encryption algorithm is 256-bit AES. 
 
-```cat authc.vault```  
+```cat vaults/authc.vault```  
 
-<img src="/images/" alt="" width=600>
+<img src="/images/01-03-cat-authc-vault-encry-web.png" alt="Encrypted User\Password File" width=600>
 
 
 <li>Use Ansible Vault to view the encrypted variable file.</li>
@@ -33,7 +38,7 @@ Remember, the password is cisco123
 
 ```ansible-vault view authc.vault```  
 
-<img src="/images/" alt="" width=600>
+<img src="/images/01-04-ansible-vault-view-web.png" alt="Using Ansible-Vault View to See Unencrypted Variables" width=600>
 
 
 </ol>  
