@@ -5,7 +5,7 @@ Storing Username and Passwords in your Inventory or Playbooks needs to be a thin
 
 <ol>
 <li>View the Unencrypted User & Password file.</li>
-![]/images/01-01-cat-authc-vault.png
+![Unencrypted User\Password File](/images/01-01-cat-authc-vault.png)
 
 ```cat vaults/authc.vault```  
 
