@@ -1,7 +1,7 @@
 
-The Directory Structure on our Workstation is as follows.
-
-/etc/ansible/
+The Directory Structure on our Workstation is as follows.  
+  
+/etc/ansible/  
 |
 |--- inventories/  (Inventory Files)  
 |  
