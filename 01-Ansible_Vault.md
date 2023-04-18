@@ -21,7 +21,8 @@ Use this command to encrypt the file that contains the variables.
 ```ansible-vault encrypt vaults/authc.vault```  
 
 <img src="/images/01-02-ansible-vault-encrypt.png" alt="Ansible Vault Encryption Process" width=600>
-
+  
+  
 <li>View the encrypted variable file.</li>
 256-bit AES with salt is used to encrypt the file.
 
