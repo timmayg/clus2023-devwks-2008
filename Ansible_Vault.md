@@ -1,4 +1,4 @@
-#Ansible Vault
+# Ansible Vault
 
 In this section we will work with Ansible Vault. 
 Storing Username and Passwords in your Inventory or Playbooks needs to be a thing of the past. 
