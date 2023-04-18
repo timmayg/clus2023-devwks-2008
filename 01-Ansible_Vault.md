@@ -12,7 +12,7 @@ In this case we are only going to encrypt these varibles, but please understand 
 
 ```cat vaults/authc.vault```  
 
-![Unencrypted User\Password File](/images/01-01-cat-authc-vault.png)
+<img src="/images//images/01-01-cat-authc-vault.png" alt="Unencrypted User\Password File" width=600>
 
 
 <li>Encrypt the variable file, use the password cisco123 </li>
@@ -26,11 +26,16 @@ Use this command to encrypt the file that contains the variables.
 256-bit AES with salt is used to encrypt the file.
 
 ```cat authc.vault```  
-    
+
+<img src="/images/" alt="" width=600>
+
+
 <li>Use Ansible Vault to view the encrypted variable file.</li>
 Remember, the password is cisco123
 
 ```ansible-vault view authc.vault```  
-   
+
+<img src="/images/" alt="" width=600>
+
 
 </ol>  
