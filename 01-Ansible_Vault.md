@@ -23,6 +23,8 @@ Use this command to encrypt the file that contains the variables.
 
 ![Ansible Vault Encryption Process](/images/01-02-ansible-vault-encrypt.png)
 
+<img src="/images/01-02-ansible-vault-encrypt.png" width=600>
+
 <li>View the encrypted variable file.</li>
 
 ```cat authc.vault```  
