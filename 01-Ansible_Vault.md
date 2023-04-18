@@ -5,22 +5,23 @@ Storing Username and Passwords in your Inventory or Playbooks needs to be a thin
 
 <ol>
 <li>View the Unencrypted User & Password file.</li>
+![]/images/01-01-cat-authc-vault.png
 
-```cat authc.vault```
+```cat vaults/authc.vault```  
 
 <li>Encrypt the variable file.</li>
 Use the password cisco123 
 
-```ansible-vault encrypt authc.vault```
+```ansible-vault encrypt authc.vault```  
     
 <li>View the encrypted variable file.</li>
 
-```cat authc.vault```
+```cat authc.vault```  
     
 <li>Use Ansible Vault to view the encrypted variable file.</li>
 Remember, the password is cisco123
 
-```ansible-vault view authc.vault```
+```ansible-vault view authc.vault```  
    
 
 </ol>  
