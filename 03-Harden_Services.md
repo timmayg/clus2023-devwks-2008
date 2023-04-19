@@ -36,7 +36,7 @@ Note the following things in the Playbook
 <li>Now run the playbook.</li>
 This playbook will assure that each of the algorithms are using highly secure primers. 
 <br>
-<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/ssh-harden-plays-cli.yaml </code>
+<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/ssh-harden-plays-cli.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
