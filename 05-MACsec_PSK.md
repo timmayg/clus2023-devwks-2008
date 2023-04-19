@@ -1,5 +1,6 @@
 # Configure MACsec PSK on VLAN Trunk Link
 
+MACsec enables wire speed AES encryption. 
 
 <ol>
 
