@@ -18,7 +18,7 @@ ansible_user & ansible_password are variables. The variables contain the usernam
 <img src="/images/01-01-cat-authc-vault-web.png" alt="Unencrypted User\Password File" width=600>
 <br><br>
 
-<li>Encrypt the variable file, use the password abcd9876 </li>
+<li>Encrypt the variable file, use the password **abcd9876** </li>
 Use this command to encrypt the file that contains the variables.  
 Assure the encryption password is entered correctly and that the the Encryption successful message is displayed. 
   
@@ -36,7 +36,7 @@ The top line identifies the file as an Ansible Vault File. The file is encrypted
 <br><br>
 
 <li>Use Ansible Vault to view the encrypted variable file.</li>
-Remember, the password is abcd9876
+Remember, the password is **abcd9876**
 
 ```ansible-vault view authc.vault```  
 
