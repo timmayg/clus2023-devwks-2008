@@ -19,7 +19,7 @@ Observe the large number of primers that are options for each algorithm.
 
 
 <li> View the SSH Hardening Playbook using cat. </li>
-Note the following items
+Note the following things in the Playbook
 <ul>
 <li>Call to the encrypted vault for authentication credentials</li>
 <li>Usage of cisco.ios.ios_config: and lines:</li>
