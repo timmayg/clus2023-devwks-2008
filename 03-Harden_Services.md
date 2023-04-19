@@ -18,6 +18,7 @@ The SSH server on IOS XE supports several cryptographic primers that are enabled
 
 
 <li> View the SSH Hardening Playbook using cat. </li>
+Observe the large number of primers that are options for each algorithm.
 <br>
 <code>cat playbooks/ssh-harden-plays-cli.yaml</code>
 <br><br>
@@ -26,6 +27,7 @@ The SSH server on IOS XE supports several cryptographic primers that are enabled
 
 
 <li>Now run the playbook.</li>
+This playbook will assure that each of the algorithms are using highly secure primers. 
 <br>
 <code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/ssh-harden-plays-cli.yaml </code>
 <br><br>
@@ -33,9 +35,9 @@ The SSH server on IOS XE supports several cryptographic primers that are enabled
 <br><br><br>
 
 
-<li> </li>
+<li>View the Cat9K SSH Status After Hardening. </li>
 <br>
-<code>View the Cat9K SSH Status After Hardening </code>
+<code> </code>
 <br><br>
 <img src="/images/" alt="SSH Server Configuration Status" width=600>
 <br><br><br>
