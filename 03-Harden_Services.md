@@ -7,7 +7,6 @@ The SSH server on IOS XE supports several cryptographic primers that are enabled
 ## Enable Only Secure Cryptographic Primers on the IOS XE SSH Service
 
 <ol>
-<br><br><br>
 
 <li>View the Cat9K SSH Status. </li>
 Observe the large number of primers that are options for each algorithm.
