@@ -2,7 +2,7 @@
 # DEVWKS-2008 - Reducing the Attack Surface of IOS XE with Ansible
 
 
-## [Ansible Vault](/01-Ansible_Vault.md)
+## [Encryption with Ansible Vault](/01-Ansible_Vault.md)
 
 ## [Work with SSH-KeyScan](/02-SSH_Keys.md)
 
