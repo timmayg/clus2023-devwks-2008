@@ -52,6 +52,21 @@ Notice that the number of cryptographic primers that are enabled for each algori
 
 ## Enable Only Secure Cryptographic Primers on the IOS XE HTTPS Service
 
+<li> </li>
+<br>
+<code></code>
+<br><br>
+<img src="/images/" alt="" width=600>
+<br><br><br>
+
+
+<li> </li>
+<br>
+<code></code>
+<br><br>
+<img src="/images/" alt="" width=600>
+<br><br><br>
+
 
 
 
