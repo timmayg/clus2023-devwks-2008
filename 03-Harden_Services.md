@@ -28,7 +28,7 @@ Note the following things in the Playbook
 <br>
 <code>cat playbooks/ssh-harden-plays-cli.yaml</code>
 <br><br>
-<img src="/images/03-03-cat-playbook-ssh-harden-web.png" alt="" width=600>
+<img src="/images/03-02-cat-playbook-ssh-harden-web.png" alt="" width=600>
 <br><br><br>
 
 
@@ -38,7 +38,7 @@ You will be prompted for the vault password, recall we set that before, the pass
 <br>
 <code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/ssh-harden-plays-cli.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/03-02-playbook-output-web.png" alt="Playbook Ran Successfully" width=600>
+<img src="/images/03-03-playbook-output-web.png" alt="Playbook Ran Successfully" width=600>
 <br><br><br>
 
 
@@ -47,8 +47,13 @@ Notice that the number of cryptographic primers that are enabled for each algori
 <br>
 <code>show ip ssh status</code>
 <br><br>
-<img src="/images/03-03-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
+<img src="/images/03-04-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
 <br><br><br>
+
+## Enable Only Secure Cryptographic Primers on the IOS XE HTTPS Service
+
+
+
 
 </ol>
 
