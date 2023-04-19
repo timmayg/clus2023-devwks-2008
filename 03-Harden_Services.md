@@ -39,7 +39,7 @@ You will be prompted for the vault password, recall we set that before, the pass
 <br>
 <code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/ssh-harden-plays-cli.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/03-02-playbook-output-web.png" alt="Playbook Ran Successfully" width=600>
 <br><br><br>
 
 
