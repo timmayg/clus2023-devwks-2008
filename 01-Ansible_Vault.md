@@ -43,6 +43,13 @@ Remember, the password is <b>abcd9876</b>
 <br><br><br>
 </ol>  
 
+<li>Observe the contents of the Inventory File </li>
+<br>
+<code>cat inventories/devnet-switches.yaml</code>
+<br><br>
+<img src="/images/" alt="" width=600>
+<br><br><br>
+
 [Click here to Move on to the next section. Working with SSH Keys. ](/02-SSH_Keys.md)
 
 
