@@ -18,11 +18,31 @@ The error Ansible throws at us is very clear in the issue, "The authenticity of 
 <img src="/images/02-02-cat-ssh-known-hosts-web.png" alt="Contents of SSH Known Hosts File" width=600>
 <br><br><br>
 
-<li> </li>
+<li>Add tcp/22 SSH Public Key to the Known Hosts File for Cat9300-1</li>
+THe output of this command shows us that we are using SSH version 2 and that the 'server' is running Cisco software. 
+<br>
+<code>ssh-keyscan -p 22 10.1.1.5 >> ~/.ssh/known_hosts </code>
+<br><br>
+<img src="/images/02-03-ssh-keyscan-web.png" alt="" width=600>
+<br><br><br>
 
+
+<li> </li>
+<br>
+<code></code>
+<br><br>
 <img src="/images/" alt="" width=600>
+<br><br><br>
+
+
+<li> </li>
+<br>
+<code></code>
+<br><br>
 <img src="/images/" alt="" width=600>
-<img src="/images/" alt="" width=600>
+<br><br><br>
+
+
 
 
 </ol>
