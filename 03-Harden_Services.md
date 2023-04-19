@@ -1,13 +1,13 @@
-# Harden IOS XE Services
+# Harden IOS XE SSH & HTTPS Services
 
 Now it's time to run some Ansible Playbooks and Reduce the Attack Surface of the IOS XE box! <br>
 
-
+The SSH server on IOS XE supports several cryptographic primers that are enabled for compatibility reasons. Some of these are less secure than others. In this task we will run a playbook that will modify the SSH server to only use highly secure cryptographic primers. Modern versions of the popular SSH clients (eg. OpenSSH, putty, SecureCRT) supported these primers.
 
 <ol>
-
 <li>Enable Only Secure Cryptographic Primers on the IOS XE SSH Service</li>
-The SSH server on IOS XE supports several cryptographic primers that are enabled for compatibility reasons. Some of these are less secure than others. In this task we will run a playbook that will modify the SSH server to only use highly secure cryptographic primers. Modern versions of the popular SSH clients (eg. OpenSSH, putty, SecureCRT) supported these primers.
+
+<br><br><br>
 
 <li>View the Cat9K SSH Status. </li>
 Observe the large number of primers that are options for each algorithm.
@@ -29,7 +29,7 @@ Note the following things in the Playbook
 <br>
 <code>cat playbooks/ssh-harden-plays-cli.yaml</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/03-03-cat-playbook-ssh-harden-web.png" alt="" width=600>
 <br><br><br>
 
 
