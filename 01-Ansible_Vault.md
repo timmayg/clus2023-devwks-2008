@@ -6,7 +6,6 @@ Storing Username and Passwords in your Inventory or Playbooks needs to be a thin
 <ol>
 
 <li>Change directory to the Ansible root directory.</li>
-<br>
 <code>cd /etc/ansible</code>
 <br><br><br>
 
