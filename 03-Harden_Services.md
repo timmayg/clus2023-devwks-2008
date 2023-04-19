@@ -34,7 +34,8 @@ Note the following things in the Playbook
 
 
 <li>Now run the playbook.</li>
-This playbook will assure that each of the algorithms are using highly secure primers. 
+This playbook will assure that each of the algorithms are using highly secure primers.
+You will be prompted for the vault password, recall we set that before, the password is <b>abcd9876</b>.
 <br>
 <code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/ssh-harden-plays-cli.yaml --ask-vault-pass</code>
 <br><br>
