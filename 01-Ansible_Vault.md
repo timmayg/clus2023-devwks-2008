@@ -22,9 +22,9 @@ Use this command to encrypt the file that contains the variables.
 Assure the encryption password is entered correctly and that the the Encryption successful message is displayed.
 <br>
 <code>ansible-vault encrypt vaults/authc.vault</code>
-
+<br>
 <img src="/images/01-02-ansible-vault-encrypt-web.png" alt="Ansible Vault Encryption Process" width=600>    
-<br><br>
+<br><br><br>
 
 <li>View the encrypted variable file.</li>
 The top line identifies the file as an Ansible Vault File. The file is encrypted using Ansible Vault version 1.1. The encryption algorithm is 256-bit AES.
