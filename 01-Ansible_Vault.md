@@ -50,6 +50,6 @@ Remember, the password is <b>abcd9876</b>
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
-[Click here to Move on to the next section. Working with SSH Keys. ](/02-SSH_Keys.md)
+[Click here to move on to the next section. Working with SSH Keys. ](/02-SSH_Keys.md)
 
 

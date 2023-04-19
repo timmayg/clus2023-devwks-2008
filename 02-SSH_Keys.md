@@ -53,4 +53,4 @@ This file may look very jumbled, that's ok.  The keys only take up one line each
 
 </ol>
 
-[Click here to Move on to the next section. Hardening IOS XE Services. ](/03-Harden_Services.md)
+[Click here to move on to the next section. Hardening IOS XE Services. ](/03-Harden_Services.md)
