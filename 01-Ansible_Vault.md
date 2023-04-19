@@ -8,15 +8,15 @@ Storing Username and Passwords in your Inventory or Playbooks needs to be a thin
 <li>Change directory to the Ansible root directory.</li>
 <br>
 <code>cd /etc/ansible</code>
-<br><br>
+<br><br><br>
 
 <li>View the Unencrypted User & Password file. </li>  
 ansible_user & ansible_password are variables. The variables contain the username and password that will be used to authenticate to the Cat9K switch. In this case we will only encrypt these varibles, but you should understand that Ansible Vault can be used to encrypt ANY variable.     
 <br>
 <code>cat vaults/authc.vault</code>
-<br>
-<img src="/images/01-01-cat-authc-vault-web.png" alt="Unencrypted User\Password File" width=600>
 <br><br>
+<img src="/images/01-01-cat-authc-vault-web.png" alt="Unencrypted User\Password File" width=600>
+<br><br><br>
 
 <li>Encrypt the variable file, use the password <b>abcd9876</b> </li>
 Use this command to encrypt the file that contains the variables.  
