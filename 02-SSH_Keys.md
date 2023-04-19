@@ -27,22 +27,29 @@ THe output of this command shows us that we are using SSH version 2 and that the
 <br><br><br>
 
 
-<li> </li>
+<li>Add tcp/830 NETCONF Port SSH Public key to the Known Hosts File for Cat9300-1</li>
+The banner for tcp/830 will be different than the banner was for tcp/22. Do not be alarmed, this is due to the the NETCONF SSH server using different server software. 
 <br>
-<code></code>
-<br><br>
-<img src="/images/" alt="" width=600>
+<code>ssh-keyscan -p 830 10.1.1.5 >> ~/.ssh/known_hosts</code>
 <br><br><br>
 
-
-<li> </li>
+<li>Add tcp/22 NETCONF Port SSH Public key to the Known Hosts File for Cat9300-2</li>
 <br>
-<code></code>
-<br><br>
-<img src="/images/" alt="" width=600>
+<code>ssh-keyscan -p 22 10.1.1.55 >> ~/.ssh/known_hosts</code>
 <br><br><br>
 
+<li>Add tcp/830 NETCONF Port SSH Public key to the Known Hosts File for Cat9300-2</li>
+<br>
+<code>ssh-keyscan -p 830 10.1.1.55 >> ~/.ssh/known_hosts</code>
+<br><br><br>
 
+<li>Now that we've added several new keys to the known_hosts file, let's view it again.  </li>
+This file may look very jumbled, that's ok.  The keys only take up one line each but they are very long so word wrap makes it look a little messy. Each key (line) starts with the hash or the IP address, take a look!
+<br>
+<code>cat ~/.ssh/known_hosts</code>
+<br><br>
+<img src="/images/02-04-cat-ssh-known-hosts-web.png" alt="New Contents of SSH Known Hosts File" width=600>
+<br><br><br>
 
 
 </ol>
