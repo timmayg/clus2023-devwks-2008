@@ -51,5 +51,6 @@ This file may look very jumbled, that's ok.  The keys only take up one line each
 <img src="/images/02-04-cat-ssh-known-hosts-web.png" alt="New Contents of SSH Known Hosts File" width=600>
 <br><br><br>
 
-
 </ol>
+
+[Click here to Move on to the next section. Hardening IOS XE Services. ](/03-Harden_Services.md)
