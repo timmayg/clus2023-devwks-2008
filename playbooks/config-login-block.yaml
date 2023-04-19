@@ -1,0 +1,30 @@
+---
+- name: This Playbook will Apply some Common Criteria Options to Strengthen Passwords
+  hosts: iosxe
+  connection: netconf
+  gather_facts: false
+
+  vars_files:
+    - /etc/ansible/vaults/authc.vault
+
+  tasks:
+    - name: Apply the Login Parameters
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <login>
+                  <on-failure>
+                    <log/>
+                  </on-failure>
+                  <on-success>
+                    <log/>
+                  </on-success>
+                  <block-config>
+                    <block-for>30</block-for>
+                    <attempts>3</attempts>
+                    <within>20</within>
+                  </block-config>
+                </login>
+              </native>
+            </config>

@@ -1,0 +1,15 @@
+---
+- name: Playbook for Adding Local Users with Common Criteria Policy
+  hosts: iosxe
+  connection: network_cli
+  gather_facts: false
+
+  vars_files:
+    - /etc/ansible/vaults/authc.vault
+
+  tasks:
+    - name: Add a Local User that complies with Common Criteria Policy
+      cisco.ios.ios_config:
+        lines:
+          - username keith.flint privilege 15 algorithm-type sha256 common-criteria-policy COMMON-POLICY secret 8 $8$c7b2VnjDSEDA4U$DFaB4UwwGvm3DY3Ql.uivp6mnXPO.Q62p0jXDzbMl3g
+

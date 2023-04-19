@@ -9,14 +9,14 @@ In this task we will view and run a playbook that will create a Common Criteria 
 
 <li>View the Playbook that will Create the Common Criteria Policy</li>
 <br>
-<code></code>
+<code>cat playbooks/config-common-criteria-policy.yaml</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
 <li>Run the Playbook that will Create the Common Criteria Policy </li>
 <br>
-<code></code>
+<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/config-common-criteria-policy.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
@@ -30,7 +30,7 @@ In this task we will view and run a playbook that will create a Common Criteria 
 
 <li>View the Playbook that will Create the IOS XE Local User </li>
 <br>
-<code></code>
+<code>cat playbooks/config-common-criteria-users.yaml</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
@@ -38,7 +38,7 @@ In this task we will view and run a playbook that will create a Common Criteria 
 
 <li>Run the Playbook that will Create the IOS XE Local User </li>
 <br>
-<code></code>
+<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/config-common-criteria-users.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
@@ -53,14 +53,14 @@ Notice how some of the users do not have the Common Criteria applied and that th
 
 <li>View the Playbook that will Configure Login Block  </li>
 <br>
-<code></code>
+<code>cat playbooks/config-login-block.yaml</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
 <li>Run the Playbook that will Configure Login Block </li>
 <br>
-<code></code>
+<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/config-login-block.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
@@ -72,9 +72,6 @@ Notice how some of the users do not have the Common Criteria applied and that th
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
-
-
-
-
-
 </ol>
+
+[Click here to move on to the next section. Configuring Switchport Trunk with MACsec. ](/05-MACsec_PSK.md)
