@@ -21,6 +21,13 @@ In this task we will view and run a playbook that will create a Common Criteria 
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
+<li>View the Common Criterial Policy on the Switch </li>
+<br>
+<code>show runn | sec aaa common-criteria</code>
+<br><br>
+<img src="/images/" alt="" width=600>
+<br><br><br>
+
 <li>View the Playbook that will Create the IOS XE Local User </li>
 <br>
 <code></code>
@@ -36,6 +43,14 @@ In this task we will view and run a playbook that will create a Common Criteria 
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
+<li>View the Local User </li>
+Notice how some of the users do not have the Common Criteria applied and that the one we just created does have it applied. 
+<br>
+<code>show runn | inc username</code>
+<br><br>
+<img src="/images/" alt="" width=600>
+<br><br><br>
+
 <li>View the Playbook that will Configure Login Block  </li>
 <br>
 <code></code>
@@ -43,12 +58,22 @@ In this task we will view and run a playbook that will create a Common Criteria 
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
-<li> </li>
+<li>Run the Playbook that will Configure Login Block </li>
 <br>
 <code></code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
+
+<li>View the Login Block Configuration  </li>
+<br>
+<code>show runn | INSERT PROPER COMMANDS HERE</code>
+<br><br>
+<img src="/images/" alt="" width=600>
+<br><br><br>
+
+
+
 
 
 
