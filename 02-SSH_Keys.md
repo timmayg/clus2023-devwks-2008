@@ -6,6 +6,7 @@ When connecting to an SSH Server the first time the client typically doesnt have
 
 <br>
 <li>Let's take a look at the error that Ansible throws when the key isn't stored.</li>
+The error Ansible throws at us is very clear in the issue, "The authenticity of the host cannot be established due to the host being unknown." 
 <br>
 <img src="/images/02-01-ssh-key-error-web.png" alt="SSH Key Unknown Error" width=600>
 <br><br><br>
