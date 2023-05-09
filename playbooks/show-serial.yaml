@@ -1,0 +1,19 @@
+---
+- name: Gather and Show the Hostname and Serial Number of the IOS XE Boxes
+  hosts: iosxe
+  gather_facts: false
+  connection: network_cli
+
+  vars_files:
+    - /etc/ansible/vaults/johnny-admin.vault
+
+  tasks:
+    - name: Get the facts
+      ios_facts:
+       gather_subset: all
+
+    - name: Display model and serial number
+      debug:
+        msg: "Switch Host Name is {{ ansible_net_hostname }}.
+              Serial number is {{ ansible_net_serialnum}}. 
+              Stack serial numbers are {{ansible_net_stacked_serialnums }}."
