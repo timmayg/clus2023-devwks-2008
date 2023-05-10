@@ -4,9 +4,6 @@
   gather_facts: false
   connection: network_cli
 
-  vars_files:
-    - /etc/ansible/vaults/johnny-admin.vault
-
   tasks:
     - name: Get the facts
       ios_facts:
