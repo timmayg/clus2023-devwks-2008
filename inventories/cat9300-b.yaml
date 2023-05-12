@@ -1,7 +1,7 @@
 ---
   iosxe:
     hosts:
-      Cat9300-2:
+      Cat9300-Pod0Xb#:
         ansible_host: 10.1.1.55
 
     vars:
