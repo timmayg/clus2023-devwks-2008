@@ -73,7 +73,7 @@ Notice that there are a large number of cipher suites enabled. Understand that s
 <br>
 <code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/01b-config-hard-https.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/01-07-https-playbook-output-web.png" alt="" width=600>
 <br><br><br>
 
 
