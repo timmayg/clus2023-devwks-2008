@@ -1,0 +1,30 @@
+---
+- name: 04 Playbook to Enable Secure HTTPS CipherSuites
+  hosts: iosxe
+  connection: netconf
+  gather_facts: false
+
+  vars_files:
+    - ~/clus2023-devnet-2111/vaults/ciscolive.vault
+
+  tasks:
+    - name: 04 Task to Enable Secure HTTPS CipherSuites
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <ip>
+                  <http xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-http">
+                    <secure-ciphersuite>
+                      <dhe-aes-gcm-sha2/>
+                      <ecdhe-ecdsa-aes-gcm-sha2/>
+                      <ecdhe-rsa-aes-gcm-sha2/>
+                      <tls13-aes128-gcm-sha256/>
+                      <tls13-aes256-gcm-sha384/>
+                      <tls13-chacha20-poly1305-sha256/>
+                    </secure-ciphersuite>
+                  </http>
+                </ip>
+              </native>
+            </config>
+

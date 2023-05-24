@@ -26,7 +26,7 @@ Note the following things in the Playbook
 </ul>
 
 <br>
-<code>cat playbooks/01-config-hard-ssh.yaml</code>
+<code>cat playbooks/01a-config-hard-ssh.yaml</code>
 <br><br>
 <img src="/images/01-02-cat-playbook-ssh-harden-web.png" alt="" width=600>
 <br><br><br>
@@ -36,7 +36,7 @@ Note the following things in the Playbook
 This playbook will assure that each of the algorithms are using highly secure primers.
 You will be prompted for the vault password, recall we set that before, the password is <b>abcd9876</b>.
 <br>
-<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/01-config-hard-ssh.yaml --ask-vault-pass</code>
+<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/01a-config-hard-ssh.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/01-03-playbook-output-web.png" alt="Playbook Ran Successfully" width=600>
 <br><br><br>
@@ -53,16 +53,17 @@ Notice that the number of cryptographic primers that are enabled for each algori
 ## Enable Only Secure Ciphersuites on the IOS XE HTTPS Service
 
 <li>View the Cat9K HTTPS Status. </li>
+Notice that there are a large number of cipher suites enabled. Understand that some of these are 'Recommended', some are 'Secure' and some are 'Weak'. 
 <br>
-<code>show ip http server status</code>
+<code>sh ip http server status | sec secure</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/01-05-show-ip-https-web.png" alt="HTTPS Server Configuration Status" width=600>
 <br><br><br>
 
 
-<li> </li>
+<li>View the HTTPS Hardening Playbook using cat.  </li>
 <br>
-<code></code>
+<code>cat playbooks/01b-config-hard-https.yaml</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
