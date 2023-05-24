@@ -1,6 +1,9 @@
 # Cisco Live US 2023
 # DEVWKS-2008 - Reducing the Attack Surface of IOS XE with Ansible
 
+Thank you for spending your time with me for the next 45 minutes. I hope that at the end of 
+this time you will be much more comfortable with hardening the IOS XE boxes that you manage. 
+
 
 ## [Encryption with Ansible Vault](/01-Ansible_Vault.md)
 
