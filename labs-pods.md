@@ -34,9 +34,9 @@ One of your SSH sessions will be a jump box for you to get to the second Cat9300
 
 SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 
-User: ciscolive
+# User: ciscolive
 
-Password: ciscolive123
+# Password: ciscolive123
 
 
 ## 03. Return back to the main page. 
