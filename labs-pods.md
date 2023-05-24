@@ -39,7 +39,7 @@ SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 ### Password: ciscolive123
 
 
-## 03. Return back to the main page. 
+## 03. Return back to the main page and then move on to step 1. 
 
 [Main Page](/README.md)
 

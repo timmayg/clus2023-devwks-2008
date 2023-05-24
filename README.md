@@ -14,14 +14,17 @@ SSH and HTTPS both use ciphers for encryption, some ciphers are more secure than
 has ciphers enabled that favor compatibility over high security. In this exersize we will flip that switch
 and 
 
+
 ## [02. Configure Common Criteria Policy & Local Users](/02-Local_Auth.md)
 The local users on our IOS XE boxes need to comply with the same password policies that our 
 typical Active Directory users comply with. Common Criteria allows us to enforce password 
 policies on IOS XE. This will make InfoSec & auditors happy :) 
 
+
 ## [03. Enable Type 6 Passwords](/03-Type6_Passwords.md)
 Type 5 & 7 passwords should not be used anywhere!  Type 6 passwords are AES-128 encrypted and are secure. 
 In this exercise we will enable Type 6 passwords globally on the IOS XE box.
+
 
 ## [04. Configure MACsec on a VLAN Trunk Port](/04-MACsec_PSK.md)
 MACsec is a layer 2 encryption protocol.  Catalyst 9000 switches have MACsec built in and are able to do 
