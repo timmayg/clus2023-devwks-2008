@@ -19,14 +19,14 @@ In this task we will view and run a playbook that will create a Common Criteria 
 <br>
 <code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/02a-add-common-criteria-policy.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/02-02-playbook-output-common-criteria-web.png" alt="" width=600>
 <br><br><br>
 
 <li>View the Common Criterial Policy on the Switch </li>
 <br>
 <code>show runn | sec aaa common-criteria</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/02-03-show-run-common-criteria-web.png" alt="" width=600>
 <br><br><br>
 
 <li>View the Playbook that will Create the IOS XE Local User </li>
