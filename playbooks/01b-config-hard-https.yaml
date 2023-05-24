@@ -5,7 +5,7 @@
   gather_facts: false
 
   vars_files:
-    - ~/clus2023-devnet-2111/vaults/ciscolive.vault
+    - ~/clus2023-devwks-2008/vaults/ciscolive.vault
 
   tasks:
     - name: 01 Task to Enable Secure HTTPS CipherSuites
