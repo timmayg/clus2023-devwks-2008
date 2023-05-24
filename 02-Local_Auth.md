@@ -6,6 +6,8 @@ IOS XE supports Common Criteria Policies and they allow Network Engineers to con
 <br><br>
 In this task we will view and run a playbook that will create a Common Criteria Policy and a local user with a password that is compliant. 
 
+## Create a Common Criteria Policy Based on Business Requirements
+
 <ol>
 
 <li>View the Playbook that will Create the Common Criteria Policy</li>
@@ -28,6 +30,8 @@ In this task we will view and run a playbook that will create a Common Criteria 
 <br><br>
 <img src="/images/02-03-show-run-common-criteria-web.png" alt="" width=600>
 <br><br><br>
+
+## Create a Local User, with Priv 15, whose password complies with Common Criteria 
 
 <li>View the Playbook that will Create the IOS XE Local User </li>
 <br>
