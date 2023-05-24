@@ -17,7 +17,7 @@ In this task we will view and run a playbook that will create a Common Criteria 
 
 <li>Run the Playbook that will Create the Common Criteria Policy </li>
 <br>
-<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/config-common-criteria-policy.yaml --ask-vault-pass</code>
+<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/02a-add-common-criteria-policy.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
