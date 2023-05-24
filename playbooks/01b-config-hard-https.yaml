@@ -1,5 +1,5 @@
 ---
-- name: 04 Playbook to Enable Secure HTTPS CipherSuites
+- name: 01 Playbook to Enable Secure HTTPS CipherSuites
   hosts: iosxe
   connection: netconf
   gather_facts: false
@@ -8,7 +8,7 @@
     - ~/clus2023-devnet-2111/vaults/ciscolive.vault
 
   tasks:
-    - name: 04 Task to Enable Secure HTTPS CipherSuites
+    - name: 01 Task to Enable Secure HTTPS CipherSuites
       ansible.netcommon.netconf_config:
         xml: |
             <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
