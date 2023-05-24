@@ -1,0 +1,27 @@
+---
+- name: 02 Playbook to Add Common Criteria Policy
+  hosts: iosxe
+  connection: netconf
+  gather_facts: false
+
+  vars_files:
+    - ~/clus2023-devwks-2008/vaults/ciscolive.vault
+
+  tasks:
+    - name: 02 Task to Add Common Criteria Policy
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <aaa>
+                  <new-model xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-aaa"/>
+                  <common-criteria xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-aaa">
+                    <policy>COMMON-POLICY</policy>
+                    <char-changes>4</char-changes>
+                    <max-length>127</max-length>
+                    <min-length>12</min-length>
+                    <restrict-consecutive-letters/>
+                  </common-criteria>
+                </aaa>
+              </native>
+            </config>
