@@ -11,7 +11,7 @@ The SSH server on IOS XE supports several cryptographic primers that are enabled
 <li>View the Cat9K SSH Status. </li>
 Observe the large number of primers that are options for each algorithm.
 <br>
-<code>show ip ssh status</code>
+<code>show ip ssh</code>
 <br><br>
 <img src="/images/03-01-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
 <br><br><br>
@@ -50,9 +50,9 @@ Notice that the number of cryptographic primers that are enabled for each algori
 <img src="/images/03-04-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
 <br><br><br>
 
-## Enable Only Secure Cryptographic Primers on the IOS XE HTTPS Service
+## Enable Only Secure Ciphersuites on the IOS XE HTTPS Service
 
-<li> </li>
+<li>View the Cat9K SSH Status. </li>
 <br>
 <code></code>
 <br><br>
