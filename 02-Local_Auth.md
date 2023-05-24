@@ -2,7 +2,7 @@
 
 Your Active Directory enforces password compliance. Your IOS XE box can too!
 
-IOS XE supports Common Criteria Policies and they allow Network Engineers to configure options such as minimum and maximum password lengths, max number of times a character can be consecutively repeated and force use of upper, lower, numberic and special characters. 
+IOS XE supports Common Criteria Policies that allow Network Engineers to configure options such as minimum and maximum password lengths, max number of times a character can be consecutively repeated and force use of upper, lower, numberic and special characters. 
 <br><br>
 In this task we will view and run a playbook that will create a Common Criteria Policy and a local user with a password that is compliant. 
 
@@ -35,7 +35,7 @@ In this task we will view and run a playbook that will create a Common Criteria 
 
 <li>View the Playbook that will Create the IOS XE Local User </li>
 <br>
-<code>cat playbooks/config-common-criteria-users.yaml</code>
+<code>cat playbooks/02b-add-common-criteria-users.yaml</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>

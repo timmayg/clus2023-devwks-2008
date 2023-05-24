@@ -1,5 +1,5 @@
 ---
-- name: 02 Playbook to Add Common Criteria Policy
+- name: 02a Playbook to Add Common Criteria Policy
   hosts: iosxe
   connection: netconf
   gather_facts: false
@@ -8,7 +8,7 @@
     - ~/clus2023-devwks-2008/vaults/ciscolive.vault
 
   tasks:
-    - name: 02 Task to Add Common Criteria Policy
+    - name: 02a Task to Add Common Criteria Policy
       ansible.netcommon.netconf_config:
         xml: |
             <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
