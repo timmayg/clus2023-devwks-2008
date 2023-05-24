@@ -10,9 +10,9 @@ In this task we will view and run a playbook that will create a Common Criteria 
 
 <li>View the Playbook that will Create the Common Criteria Policy</li>
 <br>
-<code>cat playbooks/config-common-criteria-policy.yaml</code>
+<code>cat playbooks/02a-add-common-criteria-policy.yaml</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/02-01-cat-common-criteria-playbook-web.png" alt="" width=600>
 <br><br><br>
 
 <li>Run the Playbook that will Create the Common Criteria Policy </li>
