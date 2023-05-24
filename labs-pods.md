@@ -1,3 +1,7 @@
+## Labs & Pods
+
+The lab network we will be working with looks like the diagram below. 
+<img src="/images/network-diagram.png" alt="DEVWKS-2008 Network Diagram" width=600>
 
 Please use this table to determine what Pod you have been assigned. 
 
