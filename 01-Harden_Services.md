@@ -36,7 +36,7 @@ Note the following things in the Playbook
 This playbook will assure that each of the algorithms are using highly secure primers.
 You will be prompted for the vault password, recall we set that before, the password is <b>abcd9876</b>.
 <br>
-<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/01-config-hard-ssh.yaml --ask-vault-pass</code>
+<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/01-config-hard-ssh.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/01-03-playbook-output-web.png" alt="Playbook Ran Successfully" width=600>
 <br><br><br>
