@@ -26,8 +26,11 @@ Please use this table to determine what Pod you have been assigned.
 
 ## 02. Please open 3 SSH Windows to  your Pod. 
 One of your SSH sessions will be used for managing Ansible and the files. 
+
 One of your SSH sessions will be a jump box for you to get to the first Cat9300 switch. 
+
 One of your SSH sessions will be a jump box for you to get to the second Cat9300 switch.
+
 
 SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 User: ciscolive
