@@ -11,6 +11,14 @@ One of your SSH sessions will be used for managing Ansible and the files.
 One of your SSH sessions will be a jump box for you to get to the first Cat9300 switch. 
 One of your SSH sessions will be a jump box for you to get to the second Cat9300 switch.
 
+SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
+User: ciscolive
+Password: ciscolive123
+
+Once you have three SSH windows open please return back to the main page. 
+
+[Main Page](/README.md)
+
 | Workstation #  | Pod FQDN  |
 | -------------- | ----------- |
 | Workstation #1  | pod01-xelab.cisco.com   |
@@ -25,3 +33,6 @@ One of your SSH sessions will be a jump box for you to get to the second Cat9300
 | Workstation #10  | pod19-xelab.cisco.com   |
 | Workstation #11  | pod21-xelab.cisco.com   |
 | Workstation #12  | pod25-xelab.cisco.com   |
+
+
+
