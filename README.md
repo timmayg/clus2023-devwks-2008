@@ -6,7 +6,7 @@ this time you will be much more comfortable with hardening the IOS XE boxes that
 
 Please click the link below to find your Pod assignment and the network diagram. 
 
-[Network Diagram & Pod Assignments](/Labs-Pods.md)
+[Network Diagram & Pod Assignments](/labs-pods.md)
 
 ## [01. Harden the IOS XE Services](/01-Harden_Services.md)
 SSH and HTTPS both use ciphers for encryption, some ciphers are more secure than others. By default IOS XE 
