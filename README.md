@@ -4,6 +4,8 @@
 Thank you for spending your time with me for the next 45 minutes. I hope that at the end of 
 this time you will be much more comfortable with hardening the IOS XE boxes that you manage. 
 
+The lab network we will be working with looks like the diagram below. 
+<img src="/images/network-diagram.png" alt="DEVWKS-2008 Network Diagram" width=600>
 
 ## [Encryption with Ansible Vault](/01-Ansible_Vault.md)
 
