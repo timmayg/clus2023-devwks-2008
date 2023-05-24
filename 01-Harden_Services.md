@@ -28,7 +28,7 @@ Note the following things in the Playbook
 <br>
 <code>cat playbooks/01a-config-hard-ssh.yaml</code>
 <br><br>
-<img src="/images/01-02-cat-playbook-ssh-harden-web.png" alt="" width=600>
+<img src="/images/01-02-cat-playbook-ssh-harden-web.png" alt="Playbook that Hardens IOS XE SSH Server" width=600>
 <br><br><br>
 
 
@@ -65,12 +65,27 @@ Notice that there are a large number of cipher suites enabled. Understand that s
 <br>
 <code>cat playbooks/01b-config-hard-https.yaml</code>
 <br><br>
+<img src="/images/01-06-cat-playbook-https-harden-web.png" alt="Playbook that Hardens IOS XE HTTPS Server" width=600>
+<br><br><br>
+
+
+<li>Run the Harden HTTPs playbook.</li>
+<br>
+<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/01b-config-hard-https.yaml --ask-vault-pass</code>
+<br><br>
+<img src="/images/" alt="" width=600>
+<br><br><br>
+
+
+<li>View the Cat9K HTTPS Status After Hardening.</li>
+<br>
+<code>sh ip http server status | sec secure</code>
+<br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
 
 
-
 </ol>
 
-[Click here to move on to the next section. Optimizing Local Authentication. ](/04-Local_Auth.md)
+[Click here to move on to the next section. Optimizing Local Authentication. ](/02-Local_Auth.md)
