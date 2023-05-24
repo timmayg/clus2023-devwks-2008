@@ -1,0 +1,39 @@
+---
+- name: 03 Playbook for SSH Hardening using ios_config - lines
+  hosts: iosxe
+  connection: network_cli
+  gather_facts: false
+
+  vars_files:
+    - ~/clus2023-devnet-2111/vaults/ciscolive.vault
+
+  tasks:
+    - name: 03a Configure SSH Server for Keyboard Authentication
+      cisco.ios.ios_config:
+        lines:
+          - ip ssh server algorithm authentication keyboard
+
+    - name: 03b Configure SSH Server Algorithm Key Exchange (KEX)
+      cisco.ios.ios_config:
+        lines:
+          - ip ssh server algorithm kex ecdh-sha2-nistp521 ecdh-sha2-nistp384
+
+    - name: 03c Configure SSH Server Algorithm Host Key
+      cisco.ios.ios_config:
+        lines:
+          - ip ssh server algorithm hostkey rsa-sha2-512 rsa-sha2-256
+
+    - name: 03d Configure SSH Server Algorithm Encryption
+      cisco.ios.ios_config:
+        lines:
+          - ip ssh server algorithm encryption aes256-gcm aes256-ctr
+
+    - name: 03e Configure SSH Server Message Authenticator Code (MAC)
+      cisco.ios.ios_config:
+        lines:
+          - ip ssh server algorithm mac hmac-sha2-512 hmac-sha2-256
+
+    - name: 03f Configure SSH Server Algorithm Public Key
+      cisco.ios.ios_config:
+        lines:
+          - ip ssh server algorithm publickey ecdsa-sha2-nistp521 ecdsa-sha2-nistp384

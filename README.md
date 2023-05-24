@@ -12,7 +12,8 @@ Please click the link below to find your Pod assignment and the network diagram.
 ## [01. Harden the IOS XE Services](/01-Harden_Services.md)
 SSH and HTTPS both use ciphers for encryption, some ciphers are more secure than others. By default IOS XE 
 has ciphers enabled that favor compatibility over high security. In this exersize we will flip that switch
-and 
+and assure that only the strongest ciphers are enabled. Be assured I've tested this and all modern 
+clients will work just fine. 
 
 
 ## [02. Configure Common Criteria Policy & Local Users](/02-Local_Auth.md)
