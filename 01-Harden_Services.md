@@ -13,7 +13,7 @@ Observe the large number of primers that are options for each algorithm.
 <br>
 <code>show ip ssh</code>
 <br><br>
-<img src="/images/03-01-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
+<img src="/images/01-01-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
 <br><br><br>
 
 
@@ -26,9 +26,9 @@ Note the following things in the Playbook
 </ul>
 
 <br>
-<code>cat playbooks/ssh-harden-plays-cli.yaml</code>
+<code>cat playbooks/01-config-hard-ssh.yaml</code>
 <br><br>
-<img src="/images/03-02-cat-playbook-ssh-harden-web.png" alt="" width=600>
+<img src="/images/01-02-cat-playbook-ssh-harden-web.png" alt="" width=600>
 <br><br><br>
 
 
@@ -36,25 +36,25 @@ Note the following things in the Playbook
 This playbook will assure that each of the algorithms are using highly secure primers.
 You will be prompted for the vault password, recall we set that before, the password is <b>abcd9876</b>.
 <br>
-<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/ssh-harden-plays-cli.yaml --ask-vault-pass</code>
+<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/01-config-hard-ssh.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/03-03-playbook-output-web.png" alt="Playbook Ran Successfully" width=600>
+<img src="/images/01-03-playbook-output-web.png" alt="Playbook Ran Successfully" width=600>
 <br><br><br>
 
 
 <li>View the Cat9K SSH Status After Hardening. </li>
 Notice that the number of cryptographic primers that are enabled for each algorithm are much less than before. We have assured that only the stong algorithms are enabled. 
 <br>
-<code>show ip ssh status</code>
+<code>show ip ssh </code>
 <br><br>
-<img src="/images/03-04-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
+<img src="/images/01-04-show-ip-ssh-web.png" alt="SSH Server Configuration Status" width=600>
 <br><br><br>
 
 ## Enable Only Secure Ciphersuites on the IOS XE HTTPS Service
 
-<li>View the Cat9K SSH Status. </li>
+<li>View the Cat9K HTTPS Status. </li>
 <br>
-<code></code>
+<code>show ip http server status</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
