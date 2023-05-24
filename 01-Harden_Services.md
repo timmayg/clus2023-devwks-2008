@@ -78,6 +78,7 @@ Notice that there are a large number of cipher suites enabled. Understand that s
 
 
 <li>View the Cat9K HTTPS Status After Hardening.</li>
+Notice that the number of CipherSuites is much less than when we started. Now the ciphersuites we have enabled are 'Recommended' or 'Secure'.
 <br>
 <code>sh ip http server status | sec secure</code>
 <br><br>
