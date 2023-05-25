@@ -1,0 +1,19 @@
+---
+- name: 03 Playbook to Enable Type 6 Password Encryption
+  hosts: iosxe
+  connection: network_cli
+  gather_facts: false
+
+  vars_files:
+    - ~/clus2023-devnet-2111/vaults/ciscolive.vault
+
+  tasks:
+    - name: 03a Configure IOS XE to use Type 6 Passwords
+      cisco.ios.ios_config:
+        lines:
+          - password encryption aes
+
+    - name: 03a Configure Encryption Key
+      cisco.ios.ios_config:
+        lines:
+          - key config-key password-encrypt SUPER-SECRET
