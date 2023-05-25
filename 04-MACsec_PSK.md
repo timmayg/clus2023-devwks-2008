@@ -20,16 +20,24 @@ today. :-)
 <ol>
 
 <li>View the MACsec Playbook using cat </li>
+You are going to notice this is a very long playbook with several tasks. 
+Because all of these tasks are configured with NETCONF RPC's its most effecient to
+put them all into the same playbook.  We will look at each of the RPCs in detail
+below. 
 <br>
 <code>cat playbooks/04-config-macsec-psk.yaml</code>
 <br><br>
-<img src="/images/" alt="" width=600>
-<br><br><br>
+<img src="/images/04-01-cat-shutdown-web.png" alt="" width=600>
+<br><br>
+<img src="/images/04-02-cat-ckn-cak-web.png" alt="" width=600>
 
-
-<li> </li>
 <br>
-<code></code>
+
+
+<li>Run the Playbook </li>
+<br>
+<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/04-config-macsec-psk.yaml --ask-vault-pass
+</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
