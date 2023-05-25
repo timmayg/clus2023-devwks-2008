@@ -29,21 +29,11 @@ This playbook contains two commands.  These two commands will configure a master
 <img src="/images/03-02-playbook-output-type6-web.png" alt="" width=600>
 <br><br><br>
 
+Excellent!   
+Type 6 passwords have been enabled. At this time no Type 6 password 
+exist on our IOS XE boxes but in the next task we will create some key chains that
+will contain pre-shared-keys and they will be stored in Type 6 format! Let's go!!!
 
-<li> </li>
-<br>
-<code></code>
-<br><br>
-<img src="/images/" alt="" width=600>
-<br><br><br>
-
-
-<li> </li>
-<br>
-<code></code>
-<br><br>
-<img src="/images/" alt="" width=600>
-<br><br><br>
 
 </ol>
 
