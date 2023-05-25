@@ -26,7 +26,7 @@ This playbook contains two commands.  These two commands will configure a master
 <br>
 <code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/03-config-type6.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/03-02-playbook-output-type6-web.png" alt="" width=600>
 <br><br><br>
 
 
