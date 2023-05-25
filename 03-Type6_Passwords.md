@@ -13,7 +13,8 @@ over the wire.
 
 <ol>
 
-<li>View the Playbook that will enable Type 6 password storage </li>
+<li>View the Playbook that will enable Type 6 password storage. </li>
+<br>
 This playbook contains two commands.  These two commands will configure a master key which will then be used to encrypt any passwords which will use Type 6 encryption. 
 <br>
 <code>cat playbooks/03-config-type6.yaml</code>

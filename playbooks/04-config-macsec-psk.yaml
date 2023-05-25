@@ -1,0 +1,150 @@
+---
+- name: Configure MACsec on Gig 1/0/1 Playbook using YANG Models
+  hosts: iosxe
+  connection: netconf
+  gather_facts: false
+
+  vars_files:
+    - ~/clus2023-devnet-2111/vaults/ciscolive.vault
+
+  tasks:
+    - name: 06a Task to Shutdown the Interface
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <interface>
+                  <GigabitEthernet>
+                    <name>1/0/1</name>
+                    <shutdown xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="merge"/>
+                  </GigabitEthernet>
+                </interface>
+              </native>
+            </config>
+
+    - name: 06b Task to Configure MKA PSK CKN and CAK
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <key>
+                  <chain xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-crypto">
+                    <name>MACSEC-KEY</name>
+                    <macsec/>
+                    <key>
+                      <id>1234</id>
+                      <cryptographic-algorithm-choice>
+                        <macsec>aes-256-cmac</macsec>
+                      </cryptographic-algorithm-choice>
+                      <key-string>
+                        <encryption>0</encryption>
+                        <key>1234567812345678123456781234567812345678123456781234567812345678</key>
+                      </key-string>
+                    </key>
+                  </chain>
+                </key>
+              </native>
+            </config>
+
+    - name: 06c Task to Configure MKA Policy
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <mka>
+                  <policy xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mka">
+                    <name>MKA_G-1-0-1</name>
+                    <macsec-cipher-suite>gcm-aes-256</macsec-cipher-suite>
+                  </policy>
+                  <suppress xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mka">
+                    <syslogs>
+                      <sak-rekey>true</sak-rekey>
+                    </syslogs>
+                  </suppress>
+                </mka>
+              </native>
+            </config>
+
+    - name: 06d Task to Configure Interface Description
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <interface>
+                  <GigabitEthernet>
+                    <name>1/0/1</name>
+                    <description>MACsec Encrypted Link</description>
+                  </GigabitEthernet>
+                </interface>
+              </native>
+            </config>
+
+    - name: 06e Task to Configure the Interface with the MKA Policy
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <interface>
+                  <GigabitEthernet>
+                    <name>1/0/1</name>
+                    <mka xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mka">
+                      <policy>
+                        <name>MKA_G-1-0-1</name>
+                      </policy>
+                    </mka>
+                  </GigabitEthernet>
+                </interface>
+              </native>
+            </config>
+
+    - name: 06f Task to Configure the Interface with the MKA Key
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <interface>
+                  <GigabitEthernet>
+                    <name>1/0/1</name>
+                    <mka xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mka">
+                      <pre-shared-key>
+                        <key-chain>
+                          <name>MACSEC-KEY</name>
+                        </key-chain>
+                      </pre-shared-key>
+                    </mka>
+                  </GigabitEthernet>
+                </interface>
+              </native>
+            </config>
+
+    - name: 06g Task to Configure MACsec Network Link on the Interface
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <interface>
+                  <GigabitEthernet>
+                    <name>1/0/1</name>
+                    <macsec-option xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-switch">
+                      <macsec>
+                        <network-link/>
+                      </macsec>
+                    </macsec-option>
+                  </GigabitEthernet>
+                </interface>
+              </native>
+            </config>
+
+    - name: 06e Task to No Shut Interface
+      ansible.netcommon.netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <interface>
+                  <GigabitEthernet>
+                    <name>1/0/1</name>
+                    <shutdown xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="delete"/>
+                  </GigabitEthernet>
+                </interface>
+              </native>
+            </config>
