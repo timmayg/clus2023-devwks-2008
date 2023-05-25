@@ -67,7 +67,7 @@ Notice how some of the users do not have the Common Criteria applied and that th
 <br>
 <code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/02c-config-login-block.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/02-07-cat-login-block-web.png" alt="" width=600>
 <br><br><br>
 
 <li>View the Login Block Configuration  </li>
