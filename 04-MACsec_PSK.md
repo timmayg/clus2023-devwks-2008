@@ -27,6 +27,8 @@ below.
 <br>
 <code>cat playbooks/04-config-macsec-psk.yaml</code>
 <br><br>
+This task will shutdown the interface. When making changes like this the interface
+should be shutdown. 
 <img src="/images/04-01-cat-shutdown-web.png" alt="" width=600>
 <br><br>
 <img src="/images/04-02-cat-ckn-cak-web.png" alt="" width=600>
