@@ -43,7 +43,7 @@ In this task we will view and run a playbook that will create a Common Criteria 
 
 <li>Run the Playbook that will Create the IOS XE Local User </li>
 <br>
-<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/config-common-criteria-users.yaml --ask-vault-pass</code>
+<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/02b-add-common-criteria-users.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/02-04-cat-local-user-web.png" alt="" width=600>
 <br><br><br>
