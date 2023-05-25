@@ -58,23 +58,23 @@ data encryption.
 <code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/04-config-macsec-psk.yaml --ask-vault-pass
 </code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/04-09-playbook-output-macsec-web.png" alt="" width=600>
 <br><br><br>
 
 
-<li> </li>
+<li>Check the MKA Status on the Switch </li>
 <br>
-<code></code>
+<code>show mka session</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/04-10-show-mka-status-web.png" alt="" width=600>
 <br><br><br>
 
 
-<li> </li>
+<li>Check the MACsec Status on the Switch </li>
 <br>
-<code></code>
+<code>show macsec interface g1/0/1</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/04-11-show-macsec-summary-web.png" alt="" width=600>
 <br><br><br>
 
 
