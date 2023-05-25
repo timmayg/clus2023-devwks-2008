@@ -81,4 +81,4 @@ Notice how some of the users do not have the Common Criteria applied and that th
 
 </ol>
 
-[Click here to move on to the next section. Configuring Switchport Trunk with MACsec. ](/05-MACsec_PSK.md)
+[Click here to move on to the next section. Configuring Type 6 Password Encryption. ](/03-Type6_Passwords.md)
