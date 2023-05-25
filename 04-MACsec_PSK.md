@@ -31,6 +31,11 @@ This task will shutdown the interface. When making changes like this the interfa
 should be shutdown. 
 <img src="/images/04-01-cat-shutdown-web.png" alt="" width=600>
 <br><br>
+This task will configure the MKA Keys which will be attached to the interface 
+in a later step. The MKA Keys consist of a CKN (Connectivity Key Name) and a 
+CAK (Connectivity Association Key). The CAK is the root of all other keys, this
+includes the SAK (Security Association Key) which is the actual key that does bulk
+data encryption.
 <img src="/images/04-02-cat-ckn-cak-web.png" alt="" width=600>
 <br><br>
 <img src="/images/04-03-cat-mka-policy-web.png" alt="" width=600>
