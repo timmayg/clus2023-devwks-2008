@@ -46,9 +46,9 @@ data encryption.
 <br><br>
 <img src="/images/04-06-cat-int-mka-key-web.png" alt="" width=600>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/04-07-cat-int-macsec-network-link-web.png" alt="" width=600>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/04-08-cat-no-shutdown-web.png" alt="" width=600>
 
 <br>
 
