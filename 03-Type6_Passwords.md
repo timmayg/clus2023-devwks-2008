@@ -18,7 +18,7 @@ This playbook contains two commands.  These two commands will configure a master
 <br>
 <code>cat playbooks/03-config-type6.yaml</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/03-01-cat-type6-web.png" alt="" width=600>
 <br><br><br>
 
 
