@@ -37,7 +37,7 @@ In this task we will view and run a playbook that will create a Common Criteria 
 <br>
 <code>cat playbooks/02b-add-common-criteria-users.yaml</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/02-04-cat-local-user-web.png" alt="" width=600>
 <br><br><br>
 
 
@@ -45,27 +45,27 @@ In this task we will view and run a playbook that will create a Common Criteria 
 <br>
 <code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/02b-add-common-criteria-users.yaml --ask-vault-pass</code>
 <br><br>
-<img src="/images/02-04-cat-local-user-web.png" alt="" width=600>
+<img src="/images/02-05-playbook-output-local-user-web.png" alt="" width=600>
 <br><br><br>
 
 <li>View the Local User </li>
 Notice how some of the users do not have the Common Criteria applied and that the one we just created does have it applied. 
 <br>
-<code>show runn | inc username</code>
+<code>show runn | inc username jhonny</code>
 <br><br>
-<img src="/images/" alt="" width=600>
+<img src="/images/02-06-show-username-jhonny-web.png" alt="" width=600>
 <br><br><br>
 
 <li>View the Playbook that will Configure Login Block  </li>
 <br>
-<code>cat playbooks/config-login-block.yaml</code>
+<code>cat playbooks/02c-config-login-block.yaml</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
 
 <li>Run the Playbook that will Configure Login Block </li>
 <br>
-<code>ansibile-playbook -i inventories/devnet-switches.yaml playbooks/config-login-block.yaml --ask-vault-pass</code>
+<code>ansible-playbook -i inventories/devnet-switches.yaml playbooks/02c-config-login-block.yaml --ask-vault-pass</code>
 <br><br>
 <img src="/images/" alt="" width=600>
 <br><br><br>
