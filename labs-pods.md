@@ -32,7 +32,7 @@ You've been warned!
 
 <img src="/images/10-01-lab-workstation-web.png" alt="Fresh Lab Workstation" width=600>
 
-Run this 3 times. 
+Run this 3 times, ADJUST for your Pod ## !
 
 <code> ssh -p 3389 -l ciscolive podXX-xelab.cisco.com </code>
 
@@ -51,6 +51,8 @@ SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 ### User: ciscolive
 
 ### Password: ciscolive123
+
+I arrange my SSH sessions like this for best viewing.   Adjust them for your own preferences. 
 
 <img src="/images/10-02-lab-workstation-ssh-web.png" alt="3 SSH Sessiosn on Lab Workstation" width=600>
 
