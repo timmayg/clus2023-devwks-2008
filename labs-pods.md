@@ -36,8 +36,11 @@ One of your SSH sessions will be used for managing Ansible and the files.
 
 One of your SSH sessions will be a jump box for you to get to the first Cat9300 switch. 
 
+<code> ssh 10.1.1.5 </code>
+
 One of your SSH sessions will be a jump box for you to get to the second Cat9300 switch.
 
+<code> ssh 10.1.1.55 </code>
 
 SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 
