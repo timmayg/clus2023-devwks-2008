@@ -4,7 +4,7 @@ It's great to see you checking out other topics! I hope you have made it through
 
 You will have seen our playbooks point to an Ansible Vault file. This is the code that is used in the playbooks. 
 
-<code> vars_files:</code> 
+<code> vars_files:</code><br> 
  <code>  - ~/clus2023-devwks-2008/vaults/ciscolive.vault</code> 
 
 What does this do? 
