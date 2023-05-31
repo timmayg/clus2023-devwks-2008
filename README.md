@@ -1,8 +1,9 @@
 # Cisco Live US 2023
 # DEVWKS-2008 - Reducing the Attack Surface of IOS XE with Ansible
 
-Thank you for spending your time with me for the next 45 minutes. I hope that at the end of 
-this time you will be much more comfortable with hardening the IOS XE boxes that you manage. 
+Thank you for spending the next 45 minutes with me. Once we are complete, 
+you will be much more comfortable Reducing the Attack Surface on the IOS XE 
+boxes you manage.
 
 Please click the link below to find your Pod assignment and the network diagram. 
 
@@ -10,27 +11,19 @@ Please click the link below to find your Pod assignment and the network diagram.
 
 
 ## [01. Harden the IOS XE Services](/01-Harden_Services.md)
-SSH and HTTPS both use ciphers for encryption, some ciphers are more secure than others. By default IOS XE 
-has ciphers enabled that favor compatibility over high security. In this exersize we will flip that switch
-and assure that only the strongest ciphers are enabled. Be assured I've tested this and all modern 
-clients will work just fine. 
+SSH and HTTPS both use ciphers for encryption; some ciphers are more secure than others. By default, IOS XE  has ciphers enabled that favor compatibility over high security. In this exercise, we will flip that switch and ensure that only the strongest ciphers are allowed. I've tested this, and all modern clients will work just fine. 
 
 
 ## [02. Configure Common Criteria Policy & Local Users](/02-Local_Auth.md)
-The local users on our IOS XE boxes need to comply with the same password policies that our 
-typical Active Directory users comply with. Common Criteria allows us to enforce password 
-policies on IOS XE. This will make InfoSec & auditors happy :) 
+The local users on our IOS XE boxes must comply with the same password policies our typical Active Directory users comply with. Common Criteria allows us to enforce password policies on IOS XE. Displaying this compliance on our IOS XE boxes will make InfoSec & auditors happy. :)
 
 
 ## [03. Enable Type 6 Passwords](/03-Type6_Passwords.md)
-Type 5 & 7 passwords should not be used anywhere!  Type 6 passwords are AES-128 encrypted and are secure. 
-In this exercise we will enable Type 6 passwords globally on the IOS XE box.
+We must stop using Type 5 hashing & Type 7 obfuscation. Type 6 passwords are AES-128 encrypted and secure. This exercise will enable Type 6 passwords globally on the IOS XE box. 
 
 
 ## [04. Configure MACsec on a VLAN Trunk Port](/04-MACsec_PSK.md)
-MACsec is a layer 2 encryption protocol.  Catalyst 9000 switches have MACsec built in and are able to do 
-line rate AES-128 (Cat9200), or AES-256 encryption on all ports at the same time. In this exercise we 
-will enable MACsec on a switch to switch link. 
+MACsec is a Layer 2 encryption protocol. Catalyst 9000 switches have MACsec built in and can do line rate AES-128 or AES-256 encryption on all ports; this can equal terabits of encryption on a single Cat 9000. In this exercise, we will enable MACsec on a switch-to-switch link. 
 
 # FYI
   
