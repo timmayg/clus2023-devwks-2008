@@ -3,15 +3,13 @@
 The lab network we will be working with looks like the diagram below. 
 <img src="/images/network-diagram.png" alt="DEVWKS-2008 Network Diagram" width=600>
 
-Please use this table to determine what Pod you have been assigned. 
+
 
 <ol>
 
-<li> Find your Workstation and then find your Pod FQDN in the table below. </li>
+<li> Use this table to determine what Pod you have been assigned. </li>
 
-NOTE: Please do NOT use Pod 12 !!! 
-Things will break, lab will fail!  
-You've been warned! 
+NOTE: Please do NOT use Pod 12 !!! Things will break, lab will fail! You've been warned! 
 
 | Workstation #  | Pod FQDN  |
 | -------------- | ----------- |
