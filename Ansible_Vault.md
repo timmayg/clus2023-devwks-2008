@@ -63,7 +63,7 @@ Please note the top line.  This header shows us this is an Ansible Vault file. I
 <br>
 In this step we will decrypt the contents on the fly for viewing. Be aware, if you log the contents of your SSH session you will log the clear text password!!!  
 
-The Vault password is abcd9876
+The Vault password is **abcd9876**
 <br>
 <code>ansible-vault view vaults/ciscolive.vault</code>
 <br><br>
