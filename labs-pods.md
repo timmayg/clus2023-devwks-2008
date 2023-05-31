@@ -58,9 +58,8 @@ I arrange my SSH sessions like this for best viewing.   Adjust them for your own
 
 </ol>
 
-## 03. Move on to Step 1, Harden IOS XE Services
 
-[Harden Services](/01-Harden_Services.md)
+[Click here to move on to the next section. Harden Services](/01-Harden_Services.md)
 
 
 
