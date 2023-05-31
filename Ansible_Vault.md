@@ -18,11 +18,11 @@ vars_files tells the ansible playbook that it should look to the files listed fo
 <li>Assure No Cleartext Passwords Exist </li>
 <br>
 In this step we will check the inventory files to assure that they do not contain the IOS XE Username and password in the clear. We will check all 3 inventory files. 
-<br>
+<br><br>
 <code>cat inventories/cat9300-a.yaml</code>
-<br>
+<br><br>
 <code>cat inventories/cat9300-b.yaml</code>
-<br>
+<br><br>
 <code>cat inventories/devnet-switches.yaml</code>
 <br><br>
 <img src="/images/" alt="" width=600>
