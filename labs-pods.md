@@ -28,17 +28,21 @@ You've been warned!
 
 
 
-## 02. Please open 3 SSH Windows to  your Pod. 
+## 02. Please open 3 SSH Windows to your Pod. 
+
+<img src="/images/10-01-lab-workstation-web.png" alt="Fresh Lab Workstation" width=600>
+
+Run this 3 times. 
 
 <code> ssh -p 3389 -l ciscolive podXX-xelab.cisco.com </code>
 
-One of your SSH sessions will be used for managing Ansible and the files. 
+The first SSH session will be used for managing Ansible and the files. 
 
-One of your SSH sessions will be a jump box for you to get to the first Cat9300 switch. 
+The second SSH session will be a jump box for you to get to the first Cat9300 switch. 
 
 <code> ssh 10.1.1.5 </code>
 
-One of your SSH sessions will be a jump box for you to get to the second Cat9300 switch.
+The third SSH session will be a jump box for you to get to the second Cat9300 switch.
 
 <code> ssh 10.1.1.55 </code>
 
@@ -47,6 +51,8 @@ SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 ### User: ciscolive
 
 ### Password: ciscolive123
+
+<img src="/images/10-02-lab-workstation-ssh-web.png" alt="3 SSH Sessiosn on Lab Workstation" width=600>
 
 
 ## 03. Return back to the main page and then move on to step 1. 
