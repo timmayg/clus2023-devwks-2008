@@ -4,8 +4,8 @@ It's great to see you checking out other topics! I hope you have made it through
 
 You will have seen our playbooks point to an Ansible Vault file. This is the code that is used in the playbooks. 
 
-<code> vars_files:
-  - ~/clus2023-devwks-2008/vaults/ciscolive.vault</code> 
+<code> vars_files:</code> 
+ <code>  - ~/clus2023-devwks-2008/vaults/ciscolive.vault</code> 
 
 What does this do? 
 <br>
@@ -62,6 +62,8 @@ Please note the top line.  This header shows us this is an Ansible Vault file. I
 <li>View the Encrypted File's Contents in Cleartext </li>
 <br>
 In this step we will decrypt the contents on the fly for viewing. Be aware, if you log the contents of your SSH session you will log the clear text password!!!  
+
+The Vault password is abcd9876
 <br>
 <code>ansible-vault view vaults/ciscolive.vault</code>
 <br><br>
