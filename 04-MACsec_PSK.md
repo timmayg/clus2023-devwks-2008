@@ -72,7 +72,7 @@ data encryption.
 
 <li>Check the MACsec Status on the Switch </li>
 <br>
-<code>show macsec interface g1/0/1</code>
+<code>show macsec summary</code>
 <br><br>
 <img src="/images/04-11-show-macsec-summary-web.png" alt="" width=600>
 <br><br><br>
