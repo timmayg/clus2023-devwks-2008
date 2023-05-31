@@ -57,9 +57,9 @@ I arrange my SSH sessions like this for best viewing.   Adjust them for your own
 <img src="/images/10-02-lab-workstation-ssh-web.png" alt="3 SSH Sessiosn on Lab Workstation" width=600>
 
 
-## 03. Return back to the main page and then move on to step 1. 
+## 03. Move on to Step 1, Harden IOS XE Services
 
-[Main Page](/README.md)
+[Harden Services](/01-Harden_Services.md)
 
 
 
