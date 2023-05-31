@@ -39,13 +39,13 @@ SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 ### User: ciscolive
 ### Password: ciscolive123
 
-The first SSH session will be used for managing Ansible and the files. 
+<li> The first SSH session will be used for managing Ansible and the files. </li>
 
-The second SSH session will be a jump box for you to get to the first Cat9300 switch. 
+<li> The second SSH session will be a jump box for you to get to the first Cat9300 switch. </li>
 
 <code> ssh 10.1.1.5 </code>
 
-The third SSH session will be a jump box for you to get to the second Cat9300 switch.
+<li> The third SSH session will be a jump box for you to get to the second Cat9300 switch.</li>
 
 <code> ssh 10.1.1.55 </code>
 
