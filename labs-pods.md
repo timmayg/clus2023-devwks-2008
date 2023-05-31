@@ -5,7 +5,7 @@ The lab network we will be working with looks like the diagram below.
 
 Please use this table to determine what Pod you have been assigned. 
 
-## 01. Find your Workstation and then find your Pod FQDN in the table below. 
+<li> Find your Workstation and then find your Pod FQDN in the table below. </li>
 
 NOTE: Please do NOT use Pod 12 !!! 
 Things will break, lab will fail!  
