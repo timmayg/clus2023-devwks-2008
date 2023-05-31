@@ -7,24 +7,31 @@ Please use this table to determine what Pod you have been assigned.
 
 ## 01. Find your Workstation and then find your Pod FQDN in the table below. 
 
+NOTE: Please do NOT use Pod 12 !!! 
+Things will break, lab will fail!  
+You've been warned! 
+
 | Workstation #  | Pod FQDN  |
 | -------------- | ----------- |
 | Workstation #1  | pod01-xelab.cisco.com   |
-| Workstation #2  | pod03-xelab.cisco.com   |
-| Workstation #3  | pod05-xelab.cisco.com   |
-| Workstation #4  | pod07-xelab.cisco.com   |
-| Workstation #5  | pod09-xelab.cisco.com   |
-| Workstation #6  | pod11-xelab.cisco.com   |
-| Workstation #7  | pod13-xelab.cisco.com   |
-| Workstation #8  | pod15-xelab.cisco.com   |
-| Workstation #9  | pod17-xelab.cisco.com   |
-| Workstation #10  | pod19-xelab.cisco.com   |
-| Workstation #11  | pod21-xelab.cisco.com   |
-| Workstation #12  | pod25-xelab.cisco.com   |
+| Workstation #2  | pod02-xelab.cisco.com   |
+| Workstation #3  | pod03-xelab.cisco.com   |
+| Workstation #4  | pod04-xelab.cisco.com   |
+| Workstation #5  | pod05-xelab.cisco.com   |
+| Workstation #6  | pod06-xelab.cisco.com   |
+| Workstation #7  | pod07-xelab.cisco.com   |
+| Workstation #8  | pod08-xelab.cisco.com   |
+| Workstation #9  | pod09-xelab.cisco.com   |
+| Workstation #10  | pod10-xelab.cisco.com   |
+| Workstation #11  | pod11-xelab.cisco.com   |
+| Workstation #12  | pod13-xelab.cisco.com   |
 
 
 
 ## 02. Please open 3 SSH Windows to  your Pod. 
+
+<code> ssh -p 3389 podXX-xelab.cisco.com </code>
+
 One of your SSH sessions will be used for managing Ansible and the files. 
 
 One of your SSH sessions will be a jump box for you to get to the first Cat9300 switch. 
