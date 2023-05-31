@@ -3,8 +3,6 @@
     hosts:
       Cat9300-Pod0Xa#:
         ansible_host: 10.1.1.5
-        ansible_user: ciscolive
-        ansible_password: ciscolive123
 
     vars:
       ansible_network_os: ios

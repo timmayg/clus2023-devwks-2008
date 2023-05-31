@@ -28,3 +28,5 @@ MACsec is a Layer 2 encryption protocol. Catalyst 9000 switches have MACsec buil
 # FYI
   
 ## [Ansible Directory Structure](/Directory_Structure.md)
+
+## [Ansible Vault Usage](/Ansible_Vault.md)
