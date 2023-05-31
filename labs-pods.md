@@ -5,6 +5,8 @@ The lab network we will be working with looks like the diagram below.
 
 Please use this table to determine what Pod you have been assigned. 
 
+<ol>
+
 <li> Find your Workstation and then find your Pod FQDN in the table below. </li>
 
 NOTE: Please do NOT use Pod 12 !!! 
@@ -27,8 +29,7 @@ You've been warned!
 | Workstation #12  | pod13-xelab.cisco.com   |
 
 
-
-## 02. Please open 3 SSH Windows to your Pod. 
+<li>Open 3 SSH Windows to your Pod.  </li>
 
 <img src="/images/10-01-lab-workstation-web.png" alt="Fresh Lab Workstation" width=600>
 
@@ -56,6 +57,8 @@ I arrange my SSH sessions like this for best viewing.   Adjust them for your own
 
 <img src="/images/10-02-lab-workstation-ssh-web.png" alt="3 SSH Sessiosn on Lab Workstation" width=600>
 
+
+</ol>
 
 ## 03. Move on to Step 1, Harden IOS XE Services
 
