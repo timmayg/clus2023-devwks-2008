@@ -30,7 +30,7 @@ You've been warned!
 
 ## 02. Please open 3 SSH Windows to  your Pod. 
 
-<code> ssh -p 3389 podXX-xelab.cisco.com </code>
+<code> ssh -p 3389 -l ciscolive podXX-xelab.cisco.com </code>
 
 One of your SSH sessions will be used for managing Ansible and the files. 
 
