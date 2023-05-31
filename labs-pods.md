@@ -36,6 +36,10 @@ Run this 3 times, ADJUST for your Pod ## !
 
 <code> ssh -p 3389 -l ciscolive podXX-xelab.cisco.com </code>
 
+SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
+### User: ciscolive
+### Password: ciscolive123
+
 The first SSH session will be used for managing Ansible and the files. 
 
 The second SSH session will be a jump box for you to get to the first Cat9300 switch. 
@@ -46,11 +50,7 @@ The third SSH session will be a jump box for you to get to the second Cat9300 sw
 
 <code> ssh 10.1.1.55 </code>
 
-SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 
-### User: ciscolive
-
-### Password: ciscolive123
 
 I arrange my SSH sessions like this for best viewing.   Adjust them for your own preferences. 
 
