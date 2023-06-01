@@ -27,11 +27,13 @@ NOTE: Please do NOT use Pod 12 !!! Things will break, lab will fail! You've been
 | Workstation #12  | pod13-xelab.cisco.com   |
 
 
-<li>Open 3 SSH Windows to your Pod.  </li>
+<li>Open 3 Terminal Sessions on your workstation. </li>
 
 <img src="/images/10-01-lab-workstation-web.png" alt="Fresh Lab Workstation" width=600>
+<br><br>
 
-SSH to your Pod three (3) times, ADJUST the command below for your Pod ##!
+
+<li>SSH to your Pod three (3) times, ADJUST the command below for your Pod ##!</li>
 
 <code> ssh -p 3389 -l ciscolive podXX-xelab.cisco.com </code>
 
