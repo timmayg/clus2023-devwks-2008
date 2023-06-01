@@ -31,7 +31,7 @@ NOTE: Please do NOT use Pod 12 !!! Things will break, lab will fail! You've been
 
 <img src="/images/10-01-lab-workstation-web.png" alt="Fresh Lab Workstation" width=600>
 
-Run this 3 times, ADJUST for your Pod ## !
+SSH to your Pod three (3) times, ADJUST the command below for your Pod ##!
 
 <code> ssh -p 3389 -l ciscolive podXX-xelab.cisco.com </code>
 
