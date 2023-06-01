@@ -40,6 +40,8 @@ SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 ### Password: ciscolive123
 
 <li> The first SSH session will be used for managing Ansible and the files. </li>
+We will need to change directories to the CLUS folder for this lab. 
+<code> cd /clus2023-devwks-2008 </code>
 
 <li> The second SSH session will be a jump box for you to get to the first Cat9300 switch. </li>
 
