@@ -42,10 +42,12 @@ SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
 <li> The first SSH session will be used for managing Ansible and the files. </li>
 We will need to change directories to the CLUS folder for this lab. <br>
 <code> cd /clus2023-devwks-2008 </code>
+<br>
 
 <li> The second SSH session will be a jump box for you to get to the first Cat9300 switch. </li>
 
 <code> ssh 10.1.1.5 </code>
+<br>
 
 <li> The third SSH session will be a jump box for you to get to the second Cat9300 switch.</li>
 
