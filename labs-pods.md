@@ -27,7 +27,7 @@ NOTE: Please do NOT use Pod 12 !!! Things will break, lab will fail! You've been
 | Workstation #12  | pod13-xelab.cisco.com   |
 
 
-<li>Open 3 Terminal Sessions on your workstation. </li>
+<li>Open 3 Terminal sessions on your workstation. </li>
 
 <img src="/images/10-01-lab-workstation-web.png" alt="Fresh Lab Workstation" width=600>
 <br><br>
@@ -37,7 +37,7 @@ NOTE: Please do NOT use Pod 12 !!! Things will break, lab will fail! You've been
 
 <code> ssh -p 3389 -l ciscolive podXX-xelab.cisco.com </code>
 
-SSH Username & Password for the Ubuntu & the Cat9300 switches are all the same.
+SSH Username & Password for the Pod & the Cat9300 switches are all the same.
 <br>
 **User: ciscolive**
 <br>
@@ -50,6 +50,13 @@ We will need to change directories to the CLUS folder for this lab. <br>
 <br><br>
 
 <li> The second SSH session will be a jump box for you to get to the first Cat9300 switch. </li>
+SSH Username & Password for the Pod & the Cat9300 switches are all the same.
+<br>
+**User: ciscolive**
+<br>
+**Password: ciscolive123**
+<br><br>
+
 
 <code> ssh 10.1.1.5 </code>
 <br>
