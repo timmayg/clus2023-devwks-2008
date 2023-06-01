@@ -56,8 +56,7 @@ SSH Username & Password for the Pod & the Cat9300 switches are all the same.
 **User: ciscolive**
 <br>
 **Password: ciscolive123**
-<br><br>
-
+<br>
 
 <code> ssh 10.1.1.5 </code>
 <br>
