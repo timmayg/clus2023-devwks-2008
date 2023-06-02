@@ -26,7 +26,8 @@ We must stop using Type 5 hashing & Type 7 obfuscation. Type 6 passwords are AES
 MACsec is a Layer 2 encryption protocol. Catalyst 9000 switches have MACsec built in and can do line rate AES-128 or AES-256 encryption on all ports; this can equal terabits of encryption on a single Cat 9000. In this exercise, we will enable MACsec on a switch-to-switch link. 
 
 # FYI
-  
-## [Ansible Directory Structure](/Directory_Structure.md)
 
 ## [Ansible Vault Usage](/Ansible_Vault.md)
+
+## [Ansible Directory Structure](/Directory_Structure.md)
+
